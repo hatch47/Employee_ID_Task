@@ -51,7 +51,7 @@ include "navbar.html";
 </div>
 <div class="container">
 <?php
-    include "DbConnection.php"; // Include the database connection code
+    include "DBConnection.php"; // Include the database connection code
 
     $employee_id = isset($_GET["employee_id"]) ? $_GET["employee_id"] : "";
     $department = isset($_GET["department"]) ? $_GET["department"] : "";
