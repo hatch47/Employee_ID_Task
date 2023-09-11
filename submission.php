@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="styles.css">
 <script src="script.js"></script>
-<link rel="icon" href="" type="image/png">
+<link rel="icon" href="emp-logo.png" type="image/png">
 <title>Submission</title>
 </head>
 <body>
@@ -26,6 +26,9 @@ include "navbar.html";
         <label for="department">Department:</label>
         <select id="department" name="department" required>
             <option value="Human Resources">Human Resources</option>
+            <option value="Management">Management</option>
+            <option value="Administration">Administration</option>
+            <option value="Accounting">Accounting</option>
             <option value="Information Technology">Information Technology</option>
             <option value="Customer Service">Customer Service</option>
             <option value="Sales">Sales</option>
