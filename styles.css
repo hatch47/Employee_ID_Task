@@ -1,3 +1,8 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -29,7 +34,7 @@ input[type="submit"] {
 
   .navbar {
     background-color: black;
-    color: white;
+    color: rgb(240, 240, 240);
     text-align: center;
     padding: 10px;
     margin: 0;
@@ -38,7 +43,7 @@ input[type="submit"] {
   }
 
   .navbar a {
-    color: white;
+    color: rgb(240, 240, 240);
     text-decoration: none;
     padding: 10px;
     margin: 0 5px;
@@ -46,7 +51,7 @@ input[type="submit"] {
   }
 
   .navbar a:hover {
-    background-color: white;
+    background-color: rgb(240, 240, 240);
     color: black;
   }
 
@@ -54,15 +59,43 @@ table {
     border-collapse: collapse;
     border: 3px solid black;
     text-align: center;
-    width: 60%;
-    margin: 0 auto;
+    width: 80%;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(240, 240, 240);
+}
+
+table tr:nth-child(even) {
+  background-color: #d4d4d4;
 }
 
 table th, table td {
     border: 1px solid black;
     padding: 10px;
+    height: 20px; 
+    width: 160px; 
 }
 
 table th {
     padding: 10px;
+}
+
+table tr {
+  height: 20px; /* Set height for rows */ 
+}
+
+table tr:not(:last-child) {
+  border-bottom: 1px solid black; /* Add bottom border to all rows except the last one */
+}
+
+.fixed-top {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px; /* optional: add padding for better readability */
+  z-index: 1000; /* optional: add a higher z-index to ensure it's above other content */
 }

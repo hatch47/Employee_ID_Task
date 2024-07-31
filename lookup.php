@@ -4,18 +4,18 @@
 <link rel="stylesheet" href="styles.css">
 <script src="script.js"></script>
 <link rel="icon" href="emp-logo.png" type="image/png">
-<title>Submission</title>
+<title>Lookup</title>
 </head>
 <body>
 <div class="container">
-
-<br><br>
 
 <?php 
 include "navbar.html";
 ?>
 
-<h1>Employee Lookup</h1>
+<br><br>
+
+<h1><u>Employee Lookup</u></h1>
     
 <form action="" method="GET">
     
@@ -44,6 +44,7 @@ include "navbar.html";
             <option value="Part-time">Part-time</option>
             <option value="Contract">Contract</option>
             <option value="Leave">Leave</option>
+            <option value="Former Employee">Former Employee</option>
         </select><br><br>
 
         <label for="email">Email:</label>
@@ -51,8 +52,7 @@ include "navbar.html";
         
         <input type="submit" name="submit" value="Search"></b><br><br>
         </form>
-</div>
-<div class="container">
+
 <?php
     include "DBConnection.php"; // Include the database connection code
 
